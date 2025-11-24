@@ -1,0 +1,200 @@
+* {
+    --primary-color: #72b6ee;
+    --secondary-color: #f4f8fb;
+    --text-color: #060606;
+    --accent-color: #2982c2;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.hero-text h1{
+    font-size: 3em;
+    font-weight: 300;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header .tagline {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+#hero {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.project {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+table, th, td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        width: 90%;
+    }
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-left h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #222;
+}
+
+.hero-right .illustration {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+.color-changing-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff3b3b; }
+    25% { color: #4CAF50; }
+    50% { color: #2982c2; }
+    75% { color: #9b27b0; }
+    100% { color: #ff9800; }
+}
